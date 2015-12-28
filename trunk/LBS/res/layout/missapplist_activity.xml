@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_ac_applist"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ac_applist_top"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvMissConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:gravity="center"
+            android:text="Missed Connections"
+            android:textColor="@android:color/white"
+             />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlTop"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlCategoryTitle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ac_applist_itemtitle_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:text="position" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lvCategory1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@android:color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

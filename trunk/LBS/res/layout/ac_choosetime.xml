@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ac_choosetime_bg"
+     >
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="337px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:layout_marginTop="60dip"
+         android:layout_marginBottom="50dip"
+        android:background="@drawable/munite_bg"
+         />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        android:layout_marginTop="30dip"
+           android:layout_marginRight="20dip"
+          android:layout_marginLeft="20dip"
+         >
+
+        <ImageButton
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="left"
+            android:src="@drawable/left_numite"
+            android:background="@drawable/right_numite"
+            android:layout_marginLeft="10px"
+             />
+
+        <ImageButton
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="right"
+            android:background="@drawable/right_numite"
+            android:src="@drawable/right_numite"
+             android:layout_marginRight="10px"
+             />
+    </RelativeLayout>
+
+    <ImageView 
+        
+        android:layout_width="460px"
+        android:layout_height="wrap_content"
+        android:src="@drawable/munite_bar"
+        android:layout_gravity="center"
+        />
+    
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="380px"
+        android:layout_height="wrap_content"
+        android:max="180" 
+        android:layout_gravity="center"
+        android:thumb="@drawable/minute_thumb"
+         android:padding="15px"
+        />
+        
+    <ImageButton
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/minute_ok"
+          android:background="@drawable/minute_ok"
+        />
+
+</LinearLayout>

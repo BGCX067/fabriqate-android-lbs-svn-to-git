@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TVAppName_ApplistItem">
+        <item name="android:textColor">@android:color/black</item>
+          <item name="android:textSize">14sp</item>
+          <item name="android:ellipsize" >end</item>
+          <item name="android:maxLines">2</item>
+    </style>
+        <style name="TVAppDetail_ApplistItem">
+          <item name="android:ellipsize" >end</item>
+          <item name="android:maxLines">4</item>
+    </style>
+           <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+</resources>

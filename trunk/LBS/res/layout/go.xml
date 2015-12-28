@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's begin"
+        android:gravity="center"
+        android:textSize="23dip"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/lets_begin" >
+    </TextView>
+    
+    <ImageView 
+        android:id="@+id/logout"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logout_selectl"
+        />
+    </RelativeLayout>
+    
+    <AbsoluteLayout
+        android:id="@+id/widget34"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-1dip"
+        android:background="@drawable/begin_bg" >
+
+        <!--
+	    <ImageView
+	        android:id="@+id/myImageView2"
+	        android:layout_width="210px"
+	        android:layout_height="280px"
+	        android:layout_x="56px"
+	        android:layout_y="120px"
+	        android:src="@drawable/go" />
+	    
+
+         <ImageView
+	        android:id="@+id/myImageView3"
+	        android:layout_width="112px"
+	        android:layout_height="112px"
+	        android:layout_x="105px"
+	        android:layout_y="256.5px" 
+	        android:src="@drawable/oa"/>
+        -->
+
+        <ImageButton
+            android:id="@+id/myButton2"
+            android:layout_width="151dp"
+            android:layout_height="40dp"
+            android:layout_x="10dp"
+            android:layout_y="84dp"
+            android:background="@drawable/clo_wait" />
+
+        <ImageButton
+            android:id="@+id/myButton1"
+            android:layout_width="143dp"
+            android:layout_height="40dp"
+            android:layout_x="161dp"
+            android:layout_y="84.5dp"
+            android:background="@drawable/man_dis" />
+
+        <ImageButton
+            android:id="@+id/or"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_x="149dp"
+            android:layout_y="91.5dp"
+            android:background="@drawable/or" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="113dp"
+            android:layout_height="60dp"
+            android:layout_x="18dp"
+            android:layout_y="138dp"
+            android:gravity="center"
+            android:text=" I will notify you when I find the perfect app for you."
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="113dp"
+            android:layout_height="60dp"
+            android:layout_x="182dp"
+            android:layout_y="138dp"
+            android:gravity="center"
+            android:text=" You can manually discover relevant apps."
+            android:textSize="11dip" />
+    </AbsoluteLayout>
+
+</LinearLayout>

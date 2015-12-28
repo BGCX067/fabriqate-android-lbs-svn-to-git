@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fabriqate.android.lbs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".Splashy"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TeachActivity"
+                  android:label="@string/main_name"
+                    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+                  >
+            <intent-filter>
+                <action android:name="com.google.app.splashy.CLEARSPLASH"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+          
+        </activity>
+          <activity
+            android:name="com.fabriqate.android.lbs.TestViewPager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fabriqate.android.lbs.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.go.ColClockAdjustActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.applist.ApplistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.appinfo.AppInfoActivity"
+            android:screenOrientation="portrait" />
+        
+       <activity
+            android:name="com.fabriqate.android.lbs.ui.go.ChooseTiemActivity"
+            android:screenOrientation="portrait" />
+           
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.go.ChooseClockActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.fabriqate.android.lbs.service.MissConnectionService" />
+
+        <receiver
+            android:label="@string/app_name"
+            android:name="com.fabriqate.android.lbs.service.MissConnedctionReceiver" >
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library android:name="com.google.android.maps" >
+        </uses-library>
+
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.select.PathMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.appinfo.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fabriqate.android.lbs.ui.appinfo.DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.applist.MissApplistActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".C2DMReceiver" />
+
+        <receiver
+            android:name=".ui.login.C2DMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.fabriqate.android.lbs" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.fabriqate.android.lbs" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <permission
+        android:name="com.fabriqate.android.lbs.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.fabriqate.android.lbs.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />  
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> 
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+</manifest>

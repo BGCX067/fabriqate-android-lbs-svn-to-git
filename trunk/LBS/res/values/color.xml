@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="divider">#848484</color>
+	<color name="yellow">#F7FE2E</color>
+	<color name="black">#000000</color>
+	<color name="blue">#46D5FF</color>
+	<color name="red">#DF0101</color>
+	<color name="btn_bg">#848484</color>
+	<color name="gray">#333333</color>
+	<color name="transparent">#00000000</color>
+	<color name="share_gray">#CCCCCC</color>
+	<color name="byline">#666666</color>
+	<color name="search_all">#405D8E</color>
+	
+	<color name="transparent_background">#50000000</color>
+	<!-- color.xml的#5000000前两位是透明的效果参数从00-99（透明-不怎么透明），后6位是颜色的设置 -->
+	
+	<!-- search -->
+    <color name="search_life">#ba50b5</color>
+    <color name="search_eat">#c4c83f</color>
+    <color name="search_drink">#d39b1c</color>
+    <color name="search_shop">#c13937</color>
+    <color name="search_play">#75c5d4</color>
+    <color name="search_escape">#1361b5</color>
+    <color name="search_visit">#1361b5</color>
+   
+	<!-- ireport -->
+	<color name="actionbar_background">#000000ff</color>
+    <color name="actionbar_text">#ffffffff</color>
+    <color name="actionbar_separator">#000000ff</color>
+    <color name="red_text_color">#ef3b3b</color>
+    <color name="blue_text_color">#97d1ff</color>
+    <color name="white_text_color">#ffffffff</color>
+    <color name="light_gray_text_color">#cccccccc</color>
+    <color name="dark_gray_color">#363636</color>
+    <color name="clear_color">#00000000</color>
+    <color name="black_color">#000000</color>
+    <color name="medium_gray_color">#555555</color>
+    <color name="semi_opaque_white_color">#33ffffff</color>
+    <color name="radio_gray_text_color">#969696</color>
+
+	<color name="selected_list_item_gradient_start">#3a7db3</color>
+	<color name="selected_list_item_gradient_end">#85bce7</color>
+	
+    <!-- TODO: remove unused colors -->
+    <color name="foreground1">#ffffffff</color>
+    <color name="foreground2">#ff696969</color>
+    <color name="background1">#ffffffff</color>
+    <color name="background2">#ffd5ddeb</color>
+    <color name="background3">#ffe3e8f1</color>
+    <color name="session_foreground_past">#ff999999</color>
+    <color name="pinned_header_background">#ff202020</color>
+    <color name="primary_background">#ff1a1f26</color>
+    <color name="primary_foreground">#ffffffff</color>
+    <color name="section_divider_background">#ff333333</color>
+    <color name="section_divider_foreground">#ffffffff</color>
+    <color name="headline_background">@android:color/transparent</color>
+    <color name="headline_text">#ff000000</color>
+    <color name="headline_created_at">#666666</color>
+    <color name="headline_created_at_red">#ffdd0000</color>
+    <color name="cnn_red">#ffca0002</color>
+    <color name="cnn_dark_red">#ff790101</color>
+    <color name="cnn_dark_gray">#ff242424</color>
+    <color name="list_item_dark_gray">#ff2e2e2e</color>
+    <color name="list_item_gray">#7f535b62</color>
+    <color name="cnn_white">#ffffffff</color>
+    <color name="weather_high">#ffff0000</color>
+    <color name="weather_low">#ff0000ff</color>
+    <color name="um_cnn_red">#ef3b3b</color>
+    <color name="um_headline_blue">#97d1ff</color>
+    
+    
+     <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+	<drawable name="yellow">#77ffff00</drawable>
+	
+	<drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#00000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    
+</resources>

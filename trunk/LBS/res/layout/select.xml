@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+   >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="636px" 
+    android:background="@drawable/home_bg">
+    <RelativeLayout
+        android:id="@+id/composer_buttons_wrapper"
+        android:layout_width="420px"
+        android:layout_height="636px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clipChildren="false"
+       
+        android:clipToPadding="false" >
+     <ImageButton 
+            android:id="@+id/music"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="187dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dip"
+            android:layout_marginRight="90.667dp"
+            android:background="@drawable/btn_music_sl"
+            android:visibility="gone" />
+      <ImageButton
+            android:id="@+id/eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true" 
+            android:layout_marginBottom="187dp"
+            android:layout_marginLeft="107dp"
+            android:layout_marginRight="30.667dp"
+            android:background="@drawable/btn_eat_sl"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+              android:layout_centerVertical="true"
+           android:layout_marginLeft="4dp"
+             android:layout_marginTop="124.866666666666667dp"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/btn_shopping_sl"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/traffic"
+              android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="187dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="25dip"
+            android:layout_marginRight="-90.667dp"
+            android:background="@drawable/btn_traffic_sl"
+            android:visibility="gone" />
+        
+        <ImageButton
+             android:id="@+id/hospital"
+       android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     
+              android:layout_marginLeft="215dp"
+            android:layout_marginTop="233dip"
+            android:layout_marginRight="-105.667dp"
+            android:background="@drawable/btn_hostiptal_sl"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+          android:layout_marginTop="233dip"
+          
+           android:layout_marginRight="108.3333333333333dp"
+            android:background="@drawable/btn_bank_sl"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginLeft="215dp"
+            android:layout_marginTop="125dip"
+            android:layout_marginRight="-100.667dp"
+            android:background="@drawable/btn_movie_sl"
+            android:visibility="gone" />
+
+       
+
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/click_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+          android:layout_marginTop="25dip"
+          android:layout_marginRight="5dip"
+        android:background="@drawable/click_me" >
+  </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/composer_buttons_show_hide_button"
+        android:layout_width="130dip"
+        android:layout_height="290dip"
+        android:layout_centerHorizontal="true"
+          android:layout_marginTop="105dip"
+        android:background="@drawable/btn_composer_sl" >
+  </RelativeLayout>
+   
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/composer_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bar"
+      
+             >
+ 
+         <ImageView
+             android:id="@+id/weather"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="0dp"
+             android:src="@drawable/sunny" />
+          <TextView
+             android:id="@+id/address"
+             android:layout_width="120dip"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="85dp"
+              android:layout_marginTop="40dp"
+            android:textSize="14dip" 
+            />
+           <TextView
+             android:id="@+id/time"
+             android:layout_width="110dip"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="45dp"
+            android:textSize="25dip" 
+          
+            />
+
+        </RelativeLayout>
+        
+</RelativeLayout>

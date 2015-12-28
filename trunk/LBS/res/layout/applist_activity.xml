@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_ac_applist"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ac_applist_top"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15px "
+            android:orientation="horizontal"
+            android:padding="0px" >
+
+            <ImageButton
+                android:id="@+id/ibtnFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/ibtnPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/ibtnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlTop"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlCategoryTitle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ac_applist_itemtitle_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:text="position" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lvCategory1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlCategoryTitle1"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants" />
+
+            <RelativeLayout
+                android:id="@+id/rlCategoryTitle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lvCategory1"
+                android:background="@drawable/ac_applist_itemtitle_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:text="current time" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lvCategory2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlCategoryTitle2"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants" />
+
+            <RelativeLayout
+                android:id="@+id/rlCategoryTitle3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lvCategory2"
+                android:background="@drawable/ac_applist_itemtitle_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:text="Today&apos;s Weather" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lvCategory3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlCategoryTitle3"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
